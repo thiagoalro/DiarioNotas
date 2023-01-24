@@ -48,29 +48,14 @@ public class GradeBook {
 		int[] frequenciaFaixasNotas = new int[10];
 
 		for (double nota : notasAlunos){
-			if (0 <= nota && nota < 1){
-				frequenciaFaixasNotas[0]++;
-			} else if (1 <= nota && nota < 2) {
-				frequenciaFaixasNotas[1]++;
-			} else if (2 <= nota && nota < 3) {
-				frequenciaFaixasNotas[2]++;
-			} else if (3 <= nota && nota < 4) {
-				frequenciaFaixasNotas[3]++;
-			} else if (4 <= nota && nota < 5) {
-				frequenciaFaixasNotas[4]++;
-			} else if (5 <= nota && nota < 6) {
-				frequenciaFaixasNotas[5]++;
-			} else if (6 <= nota && nota < 7) {
-				frequenciaFaixasNotas[6]++;
-			} else if (7 <= nota && nota < 8) {
-				frequenciaFaixasNotas[7]++;
-			} else if (8 <= nota && nota < 9) {
-				frequenciaFaixasNotas[8]++;
-			} else if (9 <= nota && nota <= 10) {
+			if (nota < 10) {
+				frequenciaFaixasNotas[(int) nota]++;
+			}
+			else {
 				frequenciaFaixasNotas[9]++;
 			}
 		}
-		 mostraDitribuicaoNotas(frequenciaFaixasNotas);
+		mostraDitribuicaoNotas(frequenciaFaixasNotas);
 	}
 
 	private void mostraDitribuicaoNotas(int[] frequenciaNotas){
