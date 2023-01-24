@@ -14,12 +14,7 @@ public class Main {
 
 		GradeBook cursoJava = new GradeBook("Curso Java - Saper",
 											notasCursoJava);
-
-		System.out.printf("Nome do curso: %s%n", cursoJava.getNomeCurso());
-		System.out.printf("Média da turma: %.2f%n", cursoJava.getMediaTurma());
-		System.out.printf("Menor nota: %.2f%n", cursoJava.getMenorNota());
-
-		cursoJava.getDistribuicaoNotas();
+		cursoJava.relatorio();
 
 	}
 }

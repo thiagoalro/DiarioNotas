@@ -73,6 +73,13 @@ public class GradeBook {
 		}
 	}
 
+	public void relatorio(){
+		mostraNotas();
+		System.out.printf("Média da turma: %.2f%n", getMediaTurma());
+		System.out.printf("Menor nota da turma: %.2f%n", getMenorNota());
+		System.out.printf("Maior nota da turma: %.2f%n", getMaiorNota());
 
+		getDistribuicaoNotas();
+	}
 
 }
