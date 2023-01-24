@@ -62,7 +62,14 @@ public class GradeBook {
 		System.out.println("*** Distribuição das notas ****");
 		for (int i = 0; i < frequenciaNotas.length; i++){
 			System.out.printf("Quantidade de notas entre %d " +
-					"e %d: %d", i, i+1, frequenciaNotas[i]);
+					"e %d: %d%n", i, i+1, frequenciaNotas[i]);
+		}
+	}
+
+	public void mostraNotas(){
+		System.out.print("*** Notas dos alunos ***\n");
+		for (int i = 0; i < notasAlunos.length; i++){
+			System.out.printf("Nota do %dº aluno: %.2f%n", i+1, notasAlunos[i]);
 		}
 	}
 
