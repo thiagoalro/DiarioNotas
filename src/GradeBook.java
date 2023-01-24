@@ -2,6 +2,11 @@ public class GradeBook {
 	private String nomeCurso;
 	private double[] notasAlunos;
 
+	public GradeBook(String nomeCurso, double[] notasAlunos){
+		this.nomeCurso = nomeCurso;
+		this.notasAlunos = notasAlunos;
+	}
+
 	public String getNomeCurso(){
 		return nomeCurso;
 	}
