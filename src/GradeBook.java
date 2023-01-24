@@ -28,7 +28,7 @@ public class GradeBook {
 		return menorNota;
 	}
 
-	public void mostraDistribuicaoNotas() {
+	public void getDistribuicaoNotas() {
 		// cria e inicializa o vetor com zeros
 		int[] frequenciaFaixasNotas = new int[10];
 
@@ -55,7 +55,14 @@ public class GradeBook {
 				frequenciaFaixasNotas[9]++;
 			}
 		}
+		 mostraDitribuicaoNotas(frequenciaFaixasNotas);
+	}
 
+	private void mostraDitribuicaoNotas(int[] frequenciaNotas){
+		for (int i = 0; i < frequenciaNotas.length; i++){
+			System.out.printf("Quantidade de notas entre %d " +
+					"e %d: %d", i, i+1, frequenciaNotas[i]);
+		}
 	}
 
 
