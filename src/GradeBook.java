@@ -59,6 +59,7 @@ public class GradeBook {
 	}
 
 	private void mostraDitribuicaoNotas(int[] frequenciaNotas){
+		System.out.println("*** Distribuição das notas ****");
 		for (int i = 0; i < frequenciaNotas.length; i++){
 			System.out.printf("Quantidade de notas entre %d " +
 					"e %d: %d", i, i+1, frequenciaNotas[i]);
