@@ -28,6 +28,16 @@ public class GradeBook {
 		return menorNota;
 	}
 
+	public double getMaiorNota(){
+		double maiorNota = notasAlunos[0];
+		for (double nota : notasAlunos){
+			if (nota > maiorNota){
+				maiorNota = nota;
+			}
+		}
+		return maiorNota;
+	}
+
 	public void getDistribuicaoNotas() {
 		// cria e inicializa o vetor com zeros
 		int[] frequenciaFaixasNotas = new int[10];
